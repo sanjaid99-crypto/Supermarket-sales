@@ -1,0 +1,49 @@
+CREATE DATABASE supermarket_db;
+
+CREATE TABLE products(
+"  product_id INT,"
+"  product_name VARCHAR(20),"
+"  price DECIMAL(6),"
+  stock_quantity INT
+  );
+
+"INSERT INTO products (product_id,product_name,price,stock_quantity)"
+VALUES
+"(1,'Rice 1kg',50.00,50),"
+"(2,'Milk 500ml',30.00,8),"
+"(3,'Bread 400g',45.00,5),"
+"(4,'Sufeast Biscuits',10.00,100),"
+"(5,'Cooking Oil 1L',140.00,25),"
+"(6,'Dettol Soap',40.00,15),"
+"(7,'Sugar 1kg',48.00,4); "
+
+select * from products;
+
+CREATE TABLE customers(
+"customer_id INT,"
+"customer_name VARCHAR(50),"
+phone_number VARCHAR (40)
+);
+
+"INSERT INTO customers (customer_id,customer_name,phone_number)"
+"values (101,'sanjai','1234567899'),"
+"(102,'raja','9876543210'),"
+"(103,'priya','8765432109'),"
+"(104,'arun','7654321098'),"
+"(105,'kavitha','6543210987');"
+
+select * from customers;
+
+CREATE TABLE sales (
+"sale_id INT,"
+"product_id INT,"
+"customer_id INT,"
+"quantity_sold INT,"
+sale_date DATE);
+
+"INSERT INTO sales(sale_id,product_id,customer_id,quantity_sold,sale_date)"
+"VALUES(1001,1,101,2,'2026-06-20'),"
+"(1002,2,102,2,'2026-06-20'),"
+"(1003,3,103,3,'2026-06-21'),"
+"(1004,4,104,4,'2026-06-21'),"
+"(1005,5,105,5,'2026-06-22');"
